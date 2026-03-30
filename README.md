@@ -3,7 +3,7 @@ Code of MetaSTAR
 
 <p align="center">
   <img src="./figures/ablation_wo_pre_r.png" alt="Visualization" width="500"><br>
-  <em>Fig 1. The ablation study of previous reward in observation $o_t=[s_t, r_{t-1}]$</em>
+  <em>Fig 1. The ablation study of previous reward in observation oₜ = [sₜ, rₜ₋₁]</em>
 </p>
 
 
