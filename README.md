@@ -1,5 +1,6 @@
 Code of MetaSTAR
 
+![image](./figures/ablation_wo_pre_r.png)
 
 <p align="center">
   <img src="./figures/ablation_wo_pre_r.png" alt="Visualization"><br>
