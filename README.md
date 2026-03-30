@@ -1,38 +1,25 @@
-Code of MetaSTAR
+## Code of MetaSTAR
 
+## Additional Experiments
 ![image](./figures/ablation_wo_pre_r.png)
-
-<p align="center">
-  <img src="./figures/ablation_wo_pre_r.png" alt="Visualization"><br>
-  <em>Fig 1. The ablation study of previous reward in observation oₜ = [sₜ, rₜ₋₁]</em>
-</p>
+Fig 1. The ablation study of previous reward in observation oₜ = [sₜ, rₜ₋₁]
 
 
-<p align="center">
-  <img src="./figures/ablation_beta.png" alt="Visualization"><br>
-  <em>Fig 2. The influence of different β in conservative meta-value objective</em>
-</p>
+![image](./figures/ablation_beta.png)
+Fig 2. The influence of different β in conservative meta-value objective
 
 
-<p align="center">
-  <img src="./figures/ablation_horizon.png" alt="Visualization"><br>
-  <em>Fig 3. The influence of different imagination horizon H</em>
-</p>
+![image](./figures/ablation_horizon.png)
+Fig 3. The influence of different imagination horizon H
 
 
-<p align="center">
-  <img src="./figures/dist_matrix_cheetah_vel.png" alt="Visualization"><br>
-  <em>Fig 4. Euclidean distance of task representations on Cheetah-Vel. The Goal is velocity, where the velocity is sampled from [0.0, 3.0]</em>
-</p>
+![image](./figures/dist_matrix_cheetah_vel.png)
+Fig 4. Euclidean distance of task representations on Cheetah-Vel. The Goal is velocity, where the velocity is sampled from [0.0, 3.0]
 
 
-<p align="center">
-  <img src="./figures/dist_matrix_cheetah_vel_sparse.png" alt="Visualization"><br>
-  <em>Fig 5. Euclidean distance of task representations on Cheetah-Vel-Sparse. The Goal is velocity, where the velocity is sampled from [0.0, 3.0]</em>
-</p>
+![image](./figures/dist_matrix_cheetah_vel_sparse.png)
+Fig 5. Euclidean distance of task representations on Cheetah-Vel-Sparse. The Goal is velocity, where the velocity is sampled from [0.0, 3.0]
 
 
-<p align="center">
-  <img src="./figures/dist_matrix_point_robot_sparse.png" alt="Visualization"><br>
-  <em>Fig 6. Euclidean distance of task representations on Point-Robot-Sparse. The Goal is position (cos(θ), sin(θ)), where the angle θ is sampled from [0.0, π]</em>
-</p>
+![image](./figures/dist_matrix_point_robot_sparse.png)
+Fig 6. Euclidean distance of task representations on Point-Robot-Sparse. The Goal is position (cos(θ), sin(θ)), where the angle θ is sampled from [0.0, π]
