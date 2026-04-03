@@ -26,17 +26,30 @@
 ## Fig 8. T-SNE visualization of the task representation on Cheetah-Vel with context collected by SAC, TD3 and random policy.
 ![image](./figures/tsne_cheetah_vel.png)
 
-## Fig 9. T-SNE visualization of the task representation on Cheetah-Vel-Sparse with context collected by SAC, TD3 and random policy.
+## Fig 9. Euclidean distance of task representations on Cheetah-Vel with context collected by TD3. The Goal is velocity, where the velocity is sampled from [0.0, 3.0].
+![image](./figures/dist_matrix_cheetah_vel_td3.png)
+
+## Fig 10. Euclidean distance of task representations on Cheetah-Vel with context collected by random policy. The Goal is velocity, where the velocity is sampled from [0.0, 3.0].
+![image](./figures/dist_matrix_cheetah_vel_random.png)
+
+## Fig 11. T-SNE visualization of the task representation on Cheetah-Vel-Sparse with context collected by SAC, TD3 and random policy.
 ![image](./figures/tsne_cheetah_vel_sparse.png)
 
-## Fig 10. T-SNE visualization of the task representation on Point-Robot-Sparse with context collected by SAC, TD3 and random policy.
-![image](./figures/tsne_point_robot_sparse.png)
-
-## Fig 11. Euclidean distance of task representations on Cheetah-Vel-Sparse with context collected by TD3. The Goal is velocity, where the velocity is sampled from [0.0, 3.0].
+## Fig 12. Euclidean distance of task representations on Cheetah-Vel-Sparse with context collected by TD3. The Goal is velocity, where the velocity is sampled from [0.0, 3.0].
 ![image](./figures/dist_matrix_cheetah_vel_sparse_td3.png)
 
-## Fig 12. Euclidean distance of task representations on Cheetah-Vel-Sparse with context collected by random policy. The Goal is velocity, where the velocity is sampled from [0.0, 3.0].
+## Fig 13. Euclidean distance of task representations on Cheetah-Vel-Sparse with context collected by random policy. The Goal is velocity, where the velocity is sampled from [0.0, 3.0].
 ![image](./figures/dist_matrix_cheetah_vel_sparse_random.png)
+
+## Fig 14. T-SNE visualization of the task representation on Point-Robot-Sparse with context collected by SAC, TD3 and random policy.
+![image](./figures/tsne_point_robot_sparse.png)
+
+## Fig 15. Euclidean distance of task representations on Point-Robot-Sparse with context collected by TD3. The Goal is position (cos(θ), sin(θ)), where the angle θ is sampled from [0, π].
+![image](./figures/dist_matrix_point_robot_sparse_td3.png)
+
+## Fig 16. Euclidean distance of task representations on Point-Robot-Sparse with context collected by random policy. The Goal is position (cos(θ), sin(θ)), where the angle θ is sampled from [0, π].
+![image](./figures/dist_matrix_point_robot_sparse_random.png)
+
 
 
 
