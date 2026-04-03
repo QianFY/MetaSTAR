@@ -117,7 +117,7 @@ def get_args(rest_args):
     parser.add_argument('--ensemble-size', type=int, default=1)
     parser.add_argument('--imagine-context-length', type=int, default=8)
     parser.add_argument('--imagine-length', type=int, default=1)
-    parser.add_argument('--rollouts-per-step', type=int, default=8)
+    parser.add_argument('--rollouts-per-step', type=int, default=16)
 
     args = parser.parse_args(rest_args)
 

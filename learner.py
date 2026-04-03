@@ -9,6 +9,7 @@ import torch
 import utils.config_utils as config_utl
 from algorithms.dqn import DQN
 from algorithms.sac import SAC
+from algorithms.td3 import TD3
 from environments.make_env import make_env
 from utils import helpers as utl, offline_utils as off_utl
 from torchkit import pytorch_utils as ptu
@@ -58,6 +59,7 @@ class Learner:
 
         # initialize tensorboard logger
         if self.args.log_tensorboard:
+            print("self.args.log_tensorboard: ", self.args.log_tensorboard)
             self.tb_logger = TBLogger(self.args)
             print('tensorboard logging...')
             #print(self.tb_logger.full_output_folder)
@@ -167,6 +169,29 @@ class Learner:
                 entropy_alpha=self.args.entropy_alpha,
                 automatic_entropy_tuning=self.args.automatic_entropy_tuning,
                 alpha_lr=self.args.alpha_lr
+            ).to(ptu.device)
+        elif self.args.policy == 'td3':
+            assert self.args.act_space.__class__.__name__ == "Box", (
+                "Can't train SAC with discrete action space!")
+            q1_network = FlattenMlp(input_size=self.args.obs_dim + self.args.action_dim,
+                                    output_size=1,
+                                    hidden_sizes=self.args.dqn_layers)
+            q2_network = FlattenMlp(input_size=self.args.obs_dim + self.args.action_dim,
+                                    output_size=1,
+                                    hidden_sizes=self.args.dqn_layers)
+            policy = TanhGaussianPolicy(obs_dim=self.args.obs_dim,
+                                        action_dim=self.args.action_dim,
+                                        hidden_sizes=self.args.policy_layers)
+            self.agent = TD3(
+                policy,
+                q1_network,
+                q2_network,
+
+                actor_lr=self.args.actor_lr,
+                critic_lr=self.args.critic_lr,
+                gamma=self.args.gamma,
+                tau=self.args.soft_target_tau,
+
             ).to(ptu.device)
         else:
             raise NotImplementedError
